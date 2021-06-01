@@ -1,0 +1,139 @@
+img{
+    max-width: 100%;
+}
+body,h1,h2,h3,h4,h5,h6,p,span{
+    font-family: 'Work Sans', sans-serif;
+}
+.navbar-fixed-top{
+    position: fixed;
+    left: 0;
+    width: 100%;
+ 
+    z-index: 999;
+}
+
+/*header scetion*/
+.navbar-brand img{
+    width: 50px;
+    margin-right: 10px;
+}
+.navbar-brand{
+    font-size: 25px;
+    font-weight: 700;
+}
+.header-menu .nav-link{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+ .header-menu{
+     margin-left: 150px;
+     font-size: 20px;
+ }
+
+ /*slider-item*/
+ .slider-scetion{
+     background: url(./img/mbr-10.jpg) no-repeat center center;
+     padding: 220px;
+     position: relative;
+     z-index: 1;
+ }
+ .slider-scetion::after{
+     content: "";
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: rgba(0,0,0,.5);
+     z-index: -1;
+ }
+ .slider-item h4{
+     margin-bottom: 30px;
+     color: #fff;
+     font-size: 25px;
+ }
+ .slider-item h2{
+     margin-bottom: 50px;
+     font-size: 50px;
+     color: #fff;
+ }
+ .slider-item .form-control {
+    padding: 14px 20px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.slider-item .btn-btn {
+    display: inline-block;
+    outline: none;
+    background: #5ba533;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: .4s;
+    border: transparent;
+}
+.slider-item .btn-btn:hover{
+  background: #fff;
+  color: #6278df;
+  box-shadow: 3px 4px 20px #6278df;
+   /* border: 1px solid #6278df;  */
+}
+
+/*about-scetion*/
+.about-scetion{
+    background: #f7f9ff;
+}
+.about-item{
+    margin-top: 150px;
+}
+
+
+/*work-box*/
+.work-box{
+    height: 250px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+.work-img{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.work-img img{
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -50px;
+    
+}
+.work-item{
+    width: 60%;
+    padding-left: 30px;
+}
+.work-item p{
+    color: #767676;
+    width: 180px;
+}
+/*tream -scetion*/
+.team-img{
+    position: relative;
+    display: block;
+}
+.team-img a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(98, 120, 223, .5);
+    opacity: 0;red
+    visibility: hidden;
+    transition: .4s;
+}
+.team-img:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
